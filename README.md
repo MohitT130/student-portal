@@ -18,3 +18,9 @@ A lightweight student portal system built to practice Git version control workfl
 ## Build and Run
 Compile the program: g++ main.cpp -o student-portal
 Run the executable: ./student_portal
+
+## Project Structure
+student-portal/
+main.cpp
+README.md
+.gitignore
