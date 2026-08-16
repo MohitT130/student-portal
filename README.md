@@ -6,3 +6,7 @@ A lightweight student portal system built to practice Git version control workfl
 - Profile management
 - Dashboard with academic overview
 - Settings and preferences
+
+## Prerequisites
+- A C++ compiler (g++ recommended, version 9 or higher) 
+- Git installed on your system
