@@ -1,10 +1,15 @@
 #include <iostream>
 
 void printWelcomeMessage() {
-   std::cout <<"     Welcome to Git !     " << std::endl;
+   std::cout<< "    Welcome to Git!     " << std::endl;
 }
 
-int main(){
-    printWelcomeMessage();
-    return 0;
+void greetUser() [
+   std::cout<< "Hello, Developer! << std::endl;
+}
+
+int main() {
+   printWelcomeMessage();
+   greetUser();
+return 0;
 }
