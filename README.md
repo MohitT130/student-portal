@@ -10,3 +10,7 @@ A lightweight student portal system built to practice Git version control workfl
 ## Prerequisites
 - A C++ compiler (g++ recommended, version 9 or higher) 
 - Git installed on your system
+
+## Setup Instructions
+1. Clone the repository: git clone https://github.com/MohitT130/student-portal.git
+2. Navigate into the project folder: cd student-portal 
