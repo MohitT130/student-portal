@@ -7,6 +7,10 @@ struct StudentProfile {
     std::string department;
 };
 
+bool isProfileComplete(const StudentProfile& profile) {
+    return !profile.name.empty() && !profile.rollNumber.empty() && !profile.department.empty();
+}
+
 void displayProfile(const StudentProfile& profile) {
     std::cout << "Name: " << profile.name << std::endl;
     std::cout << "Roll Number: " << profile.rollNumber << std::endl;
@@ -23,7 +27,10 @@ int main() {
     profile.name = "Mohit Tripathi";
     profile.rollNumber = "2026204020";
     profile.department = "Product Design and Management";
-    displayProfile(profile);
+
+    if (isProfileComplete(profile)) {
+        displayProfile(profile);
+    }
     updateDepartment(profile, "Computer Science");
     return 0;
 }
