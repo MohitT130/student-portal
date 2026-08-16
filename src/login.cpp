@@ -19,8 +19,13 @@ void attemptLogin(const std::string& username, const std::string& password, int 
     }
 }
 
+void logoutUser(const std::string& username) {
+    std::cout << "User " << username << " has been logged out." << std::endl;
+}
+
 int main() {
     std::cout << "Login Module" << std::endl;
     attemptLogin("student1", "pass123", 0);
+    logoutUser("student1");
     return 0;
 }
