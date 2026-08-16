@@ -26,4 +26,3 @@ int main() {
 
    return 0;
 }
-// version marker v2
