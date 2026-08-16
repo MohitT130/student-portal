@@ -14,11 +14,17 @@ void displaySettings(const UserSettings& settings) {
     std::cout << "Language: " << settings.language << std::endl;
 }
 
+void toggleDarkMode(UserSettings& settings) {
+    settings.darkMode = !settings.darkMode;
+    std::cout << "Dark mode toggled to: " << (settings.darkMode ? "On" : "Off") << std::endl;
+}
+
 int main() {
     UserSettings settings;
     settings.darkMode = false;
     settings.notificationsEnabled = true;
     settings.language = "English";
     displaySettings(settings);
+    toggleDarkMode(settings);
     return 0;
 }
