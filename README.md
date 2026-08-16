@@ -14,3 +14,7 @@ A lightweight student portal system built to practice Git version control workfl
 ## Setup Instructions
 1. Clone the repository: git clone https://github.com/MohitT130/student-portal.git
 2. Navigate into the project folder: cd student-portal 
+
+## Build and Run
+Compile the program: g++ main.cpp -o student-portal
+Run the executable: ./student_portal
