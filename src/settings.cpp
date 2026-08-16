@@ -19,6 +19,11 @@ void toggleDarkMode(UserSettings& settings) {
     std::cout << "Dark mode toggled to: " << (settings.darkMode ? "On" : "Off") << std::endl;
 }
 
+void changeLanguage(UserSettings& settings, const std::string& newLang) {
+    settings.language = newLang;
+    std::cout << "Language changed to: " << newLang << std::endl;
+}
+
 int main() {
     UserSettings settings;
     settings.darkMode = false;
@@ -26,5 +31,6 @@ int main() {
     settings.language = "English";
     displaySettings(settings);
     toggleDarkMode(settings);
+    changeLanguage(settings, "Hindi");
     return 0;
 }
