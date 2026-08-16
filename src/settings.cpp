@@ -9,6 +9,9 @@ struct UserSettings {
 
 void displaySettings(const UserSettings& settings) {
     std::cout << "=== User Settings ===" << std::endl;
+    std::cout << "Dark Mode: " << (settings.darkMode ? "On" : "Off") << std::endl;
+    std::cout << "Notifications: " << (settings.notificationsEnabled ? "On" : "Off") << std::endl;
+    std::cout << "Language: " << settings.language << std::endl;
 }
 
 int main() {
