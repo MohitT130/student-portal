@@ -13,11 +13,17 @@ void displayProfile(const StudentProfile& profile) {
     std::cout << "Department: " << profile.department << std::endl;
 }
 
+void updateDepartment(StudentProfile& profile, const std::string& newDept) {
+    profile.department = newDept;
+    std::cout << "Department updated to: " << newDept << std::endl;
+}
+
 int main() {
     StudentProfile profile;
     profile.name = "Mohit Tripathi";
     profile.rollNumber = "2026204020";
-    profile.department = "Computer Science";
+    profile.department = "Product Design and Management";
     displayProfile(profile);
+    updateDepartment(profile, "Computer Science");
     return 0;
 }
